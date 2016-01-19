@@ -1,8 +1,8 @@
 # Full Stack Developer Quiz
 
-This is a quick Laravel application. If you're comfortable with Laravel and a javascript framework, the whole thing should take about an hour. The isntructions are on the home page of the poject itself, but at a high level, this quiz will ask you to:
+This is a quick Laravel 5 application. If you're comfortable with Laravel and a javascript framework, the whole thing should take about an hour. The instructions are on the home page of the poject itself, but at a high level, this quiz will ask you to:
 
-  - Fork the github repo
+  - Fork this github repo
   - Clone the Laravel application locally
   - Create 2 Models, Controllers, Database Migrations, and seeds for a given schema (again, an outline will be provided)
   - Create a bootstrap form that reflects those models

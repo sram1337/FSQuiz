@@ -1,2 +1,46 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
+body{
+  color:#333;
+  font-size:16px;
+  line-height:1em;
+}
+nav.navbar {
+  background: #333;
+  border-radius: 0;
+  color: #fff;
+  font-size: 20px;
+  .brand{
+    padding-top:9px;
+  }
+  a{
+    color:#fff;
+    font-size:15px;
+    &:hover, &:focus{
+      color:#337ab7;
+    }
+  }
+  .container{
+    padding: 25px 0;
+    text-align: center;
+  }
+}
+section{
+  padding:100px 0;
+  .row{
+    padding:50px 0;
+  }
+}
+article{
+  margin-bottom:55px;
+  line-height:34px;
+  h1 {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom:55px;
+  }
+}
+h2{
+  small{
+    font-size:15px;
+    padding-left:25px;
+  }
+}
