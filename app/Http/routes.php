@@ -1,5 +1,7 @@
 <?php
-
+use App\Http\Controllers\JobOpeningController;
+use App\Http\Controllers\ApplicantController;
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Routes File
@@ -15,7 +17,35 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('job-openings', 'JobOpeningController@showTable');
+Route::get('applicants', 'ApplicantController@showTable');
 
+Route::post('job-openings', 'JobOpeningController@store');
+Route::post('applicants', 'ApplicantController@store');
+
+Route::post('job-openings/delete', function(Request $request){
+    $controller = new JobOpeningController;
+    $controller->delete($request);
+    return redirect('job-openings');
+});
+Route::post('applicants/delete', function(Request $request){
+    $controller = new ApplicantController;
+    $controller->delete($request);
+    return redirect('applicants');
+});
+
+
+Route::post('job-openings/update', function(Request $request){
+    $controller = new JobOpeningController;
+    $controller->update($request);
+    return redirect('job-openings');
+});
+Route::post('applicants/update', function(Request $request){
+    $controller = new ApplicantController;
+    $controller->update($request);
+    return redirect('applicants');
+});
+//Route::post('applicants/delete', 'ApplicantController@delete');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
